@@ -1,0 +1,43 @@
+{
+  "name": "deepsix-dev-portfolio",
+  "version": "2.0.0",
+  "description": "Professional portfolio website for DEEPSIX DEV - Senior Full-Stack Developer & System Designer",
+  "private": true,
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.294.0",
+    "react-intersection-observer": "^9.5.3",
+    "@vercel/analytics": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "fullstack",
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "performance",
+    "production"
+  ],
+  "author": "DEEPSIX DEV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepsix-AJ/deepsix-dev-portfolio"
+  },
+  "homepage": "https://deepsixx.com"
+}

@@ -1,0 +1,72 @@
+{
+  "name": "deepsix-dev-portfolio",
+  "version": "2.0.0",
+  "description": "Professional portfolio website for DEEPSIX DEV - Senior Full-Stack Developer & System Designer",
+  "private": true,
+  "homepage": "https://deepsix-aj.github.io/deepsix",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "build:static": "next build && next export",
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m 'Deploy to GitHub Pages' && git push",
+    "analyze": "ANALYZE=true npm run build",
+    "build:analyze": "cross-env ANALYZE=true next build",
+    "build:production": "NODE_ENV=production next build",
+    "clean": "rm -rf .next out dist",
+    "optimize": "npm run clean && npm run build:production",
+    "test:build": "npm run build && npm run start",
+    "performance": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.294.0",
+    "react-intersection-observer": "^9.5.3",
+    "@vercel/analytics": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@svgr/webpack": "^8.1.0",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "fullstack",
+    "react",
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "performance",
+    "production",
+    "github-pages"
+  ],
+  "author": "DEEPSIX DEV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepsix-AJ/deepsix.git"
+  }
+}
