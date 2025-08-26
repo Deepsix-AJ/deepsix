@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Professional portfolio website for DEEPSIX DEV - Senior Full-Stack Developer & System Designer",
   "private": true,
-  "homepage": "https://deepsix-aj.github.io/deepsix",
+  "homepage": "https://deepsixx.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +12,7 @@
     "type-check": "tsc --noEmit",
     "build:static": "next build && next export",
     "export": "next build && next export",
-    "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m 'Deploy to GitHub Pages' && git push",
+    "deploy": "npm run build && touch out/.nojekyll && echo 'deepsixx.com' > out/CNAME && git add out/ && git commit -m 'Deploy to GitHub Pages' && git push",
     "analyze": "ANALYZE=true npm run build",
     "build:analyze": "cross-env ANALYZE=true next build",
     "build:production": "NODE_ENV=production next build",

@@ -31,6 +31,9 @@ jobs:
     - name: Create .nojekyll file
       run: touch out/.nojekyll
       
+    - name: Create CNAME file for custom domain
+      run: echo "deepsixx.com" > out/CNAME
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'

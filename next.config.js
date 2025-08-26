@@ -3,8 +3,9 @@ const nextConfig = {
   // GitHub Pages configuration
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/deepsix' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/deepsix' : '',
+  // Remove basePath for custom domain
+  // basePath: process.env.NODE_ENV === 'production' ? '/deepsix' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/deepsix' : '',
   
   // Production optimizations
   productionBrowserSourceMaps: false,
